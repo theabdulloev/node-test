@@ -3,7 +3,9 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 
-app.use('/home',{home: 'Ismoiljon Abdulloev'})
+app.get('/', function (req, res) {
+    res.send('Hello World')
+  })
 
 const port = process.env.PORT || 9001;
 
