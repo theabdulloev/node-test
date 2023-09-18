@@ -4,14 +4,14 @@ const app = express();
 app.use(express.json());
 
 app.get('/', function (req, res) {
-    res.send('Hello World')
+    res.send('Hello Friend')
   })
 
 // MONGO DB START
 const { MongoClient } = require('mongodb');
 const url = 'mongodb+srv://abdulloev:0CSxryhOnWJEhipW@tojikonbookcl.jsrcsga.mongodb.net/';
 const client = new MongoClient(url);
-const dbName = 'Users';
+const dbName = 'Friend';
 
 async function main() {
   // Use connect method to connect to the server
