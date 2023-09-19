@@ -1,5 +1,6 @@
 import express from 'express';
 import crypto from 'crypto';
+import path from 'path';
 import { MongoClient } from 'mongodb';
 // const express = require('express');
 // const crypto = require("crypto");
@@ -14,7 +15,8 @@ app.use(express.json());
 
 const jsonParser = express.json();
 
-app.use(express.static('./static'));
+
+app.use('/static', express.static(path.join(__dirname, 'static')))
 
 
 app.post("/emailsignup", jsonParser, async (req, res) => {
@@ -75,9 +77,10 @@ app.post("/emailsignup", jsonParser, async (req, res) => {
   //   }
   // });
 });
-// app.get("/", (req, res) => {
-//   res.sendFile('./static/index.html');
-// });
+app.get("/", (req, res) => {
+  console.log("request")
+  res.sendFile('./static/index.html');
+});
 
 
 
