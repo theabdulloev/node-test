@@ -13,7 +13,8 @@ app.use(express.json());
 
 
 const jsonParser = express.json();
-app.use(express.static(__dirname + "/static"));
+
+app.use(express.static('./static'));
 
 
 app.post("/emailsignup", jsonParser, async (req, res) => {
@@ -74,12 +75,9 @@ app.post("/emailsignup", jsonParser, async (req, res) => {
   //   }
   // });
 });
-
-
-// app.get('/', function (req, res) {
-//     res.send('Hello World')
-//   })
-
+// app.get("/", (req, res) => {
+//   res.sendFile('./static/index.html');
+// });
 
 
 
