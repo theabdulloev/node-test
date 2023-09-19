@@ -13,7 +13,7 @@ const jsonParser = express.json();
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-app.use('/', express.static(path.join(__dirname)));
+app.use('/var/task/', express.static(path.join(__dirname)));
 
 const port = process.env.PORT || 1313;
 
