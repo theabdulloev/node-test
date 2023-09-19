@@ -7,9 +7,9 @@ import { MongoClient } from 'mongodb';
 const url = 'mongodb+srv://abdulloev:0CSxryhOnWJEhipW@tojikonbookcl.jsrcsga.mongodb.net/';
 const client = new MongoClient(url);
 const dbName = 'TagGram';
+const app = express();
 app.use(express.json());
 const jsonParser = express.json();
-const app = express();
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
