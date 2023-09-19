@@ -1,0 +1,212 @@
+/* box-shadow: inset 2px 2px 5px var(--box-shadow-color-second),
+inset -2px -2px 5px var(--box-shadow-color-first); 
+
+  box-shadow: -2px -2px 5px var(--box-shadow-color-first),
+    2px 2px 5px var(--box-shadow-color-second);
+
+
+      box-shadow: inset 2px 2px 5px var(--box-shadow-color-first),
+    inset -2px -2px 5px var(--box-shadow-color-second);
+*/
+
+.profil{
+    overflow-x: hidden;
+}
+.profil_content{
+    max-width: 1170px;
+    height: calc(100vh - 80px);
+    margin: 10px auto;
+    box-shadow: inset 2px 2px 5px var(--box-shadow-color-second),
+    inset -2px -2px 5px var(--box-shadow-color-first);
+    border-radius: 10px;
+}
+
+.profil_header{
+    width: 100%;
+    height: 250px;
+    display: flex;
+
+}
+
+.profil_header > .profil_photo{
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+
+}
+
+.profil_header > .profil_photo > .profil_photos{
+    width: calc(100% - 50px) ;
+    height: 100%;
+    border-radius: 50%;
+    /* background-color: #cde8ff; */
+    box-shadow: inset 2px 2px 5px var(--box-shadow-color-first),
+    inset -2px -2px 5px var(--box-shadow-color-second);
+    margin: 10px;
+    padding: 7px;
+}
+
+.profil_header > .profil_text{
+    font-size: 1.3rem;
+    width: calc(100% - 300px);
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+.profil_header > .profil_text > .profil_row2 > span{
+    margin-right: 20px;
+    box-shadow: -2px -2px 5px var(--box-shadow-color-first),
+    2px 2px 5px var(--box-shadow-color-second);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.profil_header > .profil_text > .profil_row1 {
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: -2px -2px 5px var(--box-shadow-color-first),
+    2px 2px 5px var(--box-shadow-color-second);
+}
+
+.topical{
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.topical > .topical_item{
+    width: 100px;
+    height: 130px;
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topical > .topical_item > .topical_photo{
+    width: 100px;
+    height: 100px;
+    background-color: #cde8ff;
+    border-radius: 50%;
+    box-shadow: inset 2px 2px 5px var(--box-shadow-color-second),
+inset -2px -2px 5px var(--box-shadow-color-first); 
+}
+
+/* .profil_posts{
+    width: 100%;
+} */
+
+.profil_posts > .profil_posts_header{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid #111;
+    
+}
+
+.profil_posts_content{
+    display: grid;
+    grid-template-columns: repeat(3,383px);
+    gap: 10px;
+}
+
+.profil_posts_content_item{
+    height: 383px;
+    background-color: #cde8ff;
+    height: 383px;
+    box-shadow: -2px -2px 5px var(--box-shadow-color-first),
+    2px 2px 5px var(--box-shadow-color-second);
+    margin: 10px;
+}
+
+profil_posts_content_item 
+>
+ img{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+
+@media screen and (max-width: 640px) {
+    .profil_content{
+        width: 100vw;
+        height: calc(100vh - 60px);
+        margin: 0 auto;
+    }
+
+    .profil_header > .profil_photo{
+        width: 60px;
+        height: 100%;
+    }
+
+    .profil_header > .profil_photo > .profil_photos{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: red;
+    }
+
+    .profil_posts_content{
+        grid-template-columns: repeat(3,33.3%);
+        gap: 1px;
+    }
+    .profil_posts_content_item{
+        background-color: #cde8ff;
+        height: 119px;
+    }
+
+    .topical{
+        width: 100%;
+        height: 80px;
+        padding: 0px;
+    }
+
+    .topical > .topical_item{
+        width: 50px;
+        height: 60px;
+        margin-right: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .topical > .topical_item > .topical_photo{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    
+    .profil_header > .profil_text{
+        font-size: 0.8rem;
+        width: calc(100% - 60px);
+        height: 100%;
+        padding: 3px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .profil_header{
+        width: 100%;
+        height: 100px;
+        display: flex;
+    }
+  }

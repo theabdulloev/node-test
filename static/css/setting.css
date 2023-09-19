@@ -1,0 +1,37 @@
+.edit {
+  width: 100vw;
+  height: calc(100vh - 60px);
+}
+
+.edit_content {
+  width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  box-shadow: 0px 0px 5px rgb(194, 194, 194);
+}
+
+.edit_left {
+  border: 1px solid;
+  border-right: none;
+}
+
+.edit_right {
+  border: 1px solid;
+}
+
+.edit_ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.edit_ul > li{
+    display: block;
+    padding: 15px 20px;
+    transition: all .3s;
+}
+
+.edit_ul > li:hover{
+    background-color: rgb(216, 234, 250);
+}
