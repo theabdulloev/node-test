@@ -14,7 +14,10 @@ app.use(express.json());
 
 
 const jsonParser = express.json();
+import { dirname } from 'path';
+import { fileURLToPath } from 'url';
 
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 app.use('/static', express.static(path.join(__dirname, 'static')))
 
