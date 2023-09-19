@@ -1,6 +1,9 @@
-const express = require('express');
-const crypto = require("crypto");
-const { MongoClient } = require('mongodb');
+import express from 'express';
+import crypto from 'crypto';
+import { MongoClient } from 'mongodb';
+// const express = require('express');
+// const crypto = require("crypto");
+// const { MongoClient } = require('mongodb');
 const url = 'mongodb+srv://abdulloev:0CSxryhOnWJEhipW@tojikonbookcl.jsrcsga.mongodb.net/';
 const client = new MongoClient(url);
 const dbName = 'TagGram';
@@ -73,13 +76,13 @@ app.post("/emailsignup", jsonParser, async (req, res) => {
 });
 
 
-app.get('/', function (req, res) {
-    res.send('Hello World')
-  })
+// app.get('/', function (req, res) {
+//     res.send('Hello World')
+//   })
 
 
 
 
-const port = process.env.PORT || 9001;
+const port = process.env.PORT || 1313;
 
 app.listen(port,() => console.log(`Listening to port ${port}`));
