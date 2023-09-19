@@ -6,7 +6,7 @@ import { editCompanent } from "./editCompanent.js";
 import { exploreCompanent } from "./exploreCompanent.js";
 import { profilCompanent } from "./profilCompanent.js";
 import { profilAccaunt } from "./profilAccaunt.js";
-const socket = io()
+// const socket = io()
 // const {socket} = allData
 
 const routes = [
