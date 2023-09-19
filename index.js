@@ -18,7 +18,7 @@ import { dirname } from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-
+console.log(path.join(__dirname))
 app.use('/static', express.static(path.join(__dirname, 'static')))
 
 
@@ -81,8 +81,7 @@ app.post("/emailsignup", jsonParser, async (req, res) => {
   // });
 });
 app.get("/", (req, res) => {
-  console.log("request")
-  res.sendFile('./static/index.html');
+  res.send(path.join(__dirname));
 });
 
 
