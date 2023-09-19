@@ -46,3 +46,9 @@ app.post("/emailsignup", jsonParser, async (req, res) => {
   const insertResult = await collection.insertOne(userProfil);
   console.log('Inserted documents =>', insertResult);
 })
+
+app.get("/send", (req, res) => {
+  console.log(__dirname)
+
+  res.sendFile('/index.html', { root: __dirname });
+});
