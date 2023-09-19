@@ -1,0 +1,109 @@
+.post_container {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.485);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.post_content {
+  width: 1200px;
+  height: 800px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logoform > img {
+  width: 100%;
+  height: 200px;
+  /* background-image: url(../img/LOGO_adobe_express.svg); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.postForm {
+  width: 900px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 5px rgb(194, 194, 194);
+  border-radius: 10px;
+}
+
+.postForm > .inputform {
+  width: calc(100% - 20px);
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.postForm > .inputform > label {
+  color: #267bc5;
+  align-self: start;
+}
+
+.postForm .inputform > input,
+.postForm > button {
+  width: 100%;
+  padding: 10px;
+  background: none;
+  border: 1px solid #267bc5;
+  outline: none;
+}
+
+.postForm .inputform > input {
+  margin-top: 5px;
+}
+
+.postForm > button {
+  width: calc(100% - 50px);
+  padding: 10px;
+  background-color: #267bc5;
+  color: aliceblue;
+  cursor: pointer;
+  margin-top: 35px;
+  box-shadow: none;
+}
+
+#close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: aliceblue;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#photo::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+#photo::before {
+  content: 'Выберать картинку';
+  color: #267bc5;
+  margin-right: 15px;
+  display: inline-block;
+  border-radius: 3px;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-size: 10pt;
+}
