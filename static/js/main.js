@@ -102,8 +102,8 @@ let myapp = {
   },
   mounted() {
     // console.log("Rabotaet")
-    this.CookieGet();
-    this.directSave();
+    // this.CookieGet();
+    // this.directSave();
     // this.userLeft()
     // this.userJoined()
   },
