@@ -50,5 +50,5 @@ app.post("/emailsignup", jsonParser, async (req, res) => {
 app.get("/send", (req, res) => {
   console.log(__dirname)
     
-  res.send("Hello Vercel",__dirname);
+  res.send(`Hello Vercel ${__dirname}`);
 });
